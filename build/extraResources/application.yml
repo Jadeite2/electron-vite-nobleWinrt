@@ -1,0 +1,37 @@
+# 端口和根路径，jar启动时依此处配置，放tomcat后以tomcat的配置为准
+server:
+  port: ${SERVER_PORT:8083}
+  servlet:
+    context-path: ${CONTEXT_PATH:/pf-lite}
+  compression:
+    enabled: true
+    min-response-size: 2048
+  tomcat:
+    # tomcat容器层最大传输限制，不做限制
+    max-http-form-post-size: -1
+    max-swallow-size: -1
+
+# 整个文档项目的配置
+lite:
+  # 管理端的数据库配置
+  datasource:
+    driverClassName: org.sqlite.JDBC
+    url: jdbc:sqlite:./data/pf_lite.db  # SQLite 数据库文件路径（相对或绝对路径）
+    username:
+    password:
+  # 版本和升级信息获取地址
+  upgradePropertiesUrl: https://gitee.com/zyplayer/zyplayer-doc/raw/master/upgrade.properties
+  # 系统根域名，调试UI时需要使用，同时需要在host文件里配置：127.0.0.1 local.u-breath.com
+  #  originDomainRegex: .*\.u-breath\.com(:\d+|)
+  originDomainRegex: .*
+
+spring:
+  application:
+    name: pf-light
+  servlet:
+    multipart:
+      max-file-size: ${SERVLET_MAX_FILE_SIZE:100MB}
+      max-request-size: ${SERVLET_MAX_REQUEST_SIZE:100MB}
+  sql:
+    init:
+      continue-on-error: true
