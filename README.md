@@ -3,6 +3,8 @@
 ## 一、概述
 
 集成 `noble-winrt` 的蓝牙低功耗功能
+[详细操作文档及代码实现，看这个](https://blog.csdn.net/Jadeite2/article/details/150112693?sharetype=blogdetail&sharerId=150112693&sharerefer=PC&sharesource=Jadeite2&spm=1011.2480.3001.8118)
+
 
 # 本项目为使用electorn-egg V4版本开发，集成BLE(蓝牙低功耗)蓝牙的demo
 # 需要先在外层npm install，然后cd到frontend目录下进行npm install，最后回到外层根目录 npm run dev运行！
