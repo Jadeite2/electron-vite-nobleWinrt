@@ -7,10 +7,10 @@
 
 
 # 本项目为使用electorn-egg V4版本开发，集成BLE(蓝牙低功耗)蓝牙的demo
-# 需要先在外层npm install，然后cd到frontend目录下进行npm install，最后回到外层根目录 npm run dev运行！
+需要先在外层npm install，然后cd到frontend目录下进行npm install，最后回到外层根目录 npm run dev运行！
 
-## ✨ main分支使用"noble-winrt": "^0.1.1"开发(较老旧且无人维护,npm及github无api)，仅支持win10/win11系统，无需安装其他编译插件
-## node v20.12.1
+✨ main分支使用"noble-winrt": "^0.1.1"开发(较老旧且无人维护,npm及github无api)，仅支持win10/win11系统，无需安装其他编译插件
+node v20.12.1
 
 
 
