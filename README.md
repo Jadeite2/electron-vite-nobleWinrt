@@ -234,7 +234,7 @@ const noble = require('noble-winrt');
 
 - `noble-winrt` 仅支持 Windows 10/11，且需要蓝牙适配器支持 BLE。
 - 设备发现、连接、服务/特征发现、数据收发流程与经典 noble 基本一致。
-- 详细参数和回调结构可参考 [noble 文档](https://github.com/noble/noble)，不完全一样。
+- 详细参数和回调结构可参考 [noble 文档](https://github.com/noble/noble)，但是不完全一样，不要直接套用里面的api，用我项目里的api，都是经过我自己踩坑看源码测试出来的。
 
 
 
