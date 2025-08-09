@@ -14,7 +14,7 @@ node v20.12.1
 
 
 
-
+```js
 ## 二、项目结构，electorn-egg V4版本官方结构
 project
 ├── package.json npm包配置
@@ -53,7 +53,7 @@ project
     ├── images 一些图片
 ├── data 内置数据库文件
     ├── sqlite-demo.db 示例sqlite数据库
-
+```
 
 
 
